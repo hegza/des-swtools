@@ -1,0 +1,3 @@
+[submodule "min-manual"]
+	path = min-manual
+	url = https://github.com/mayconfmelo/min-manual
