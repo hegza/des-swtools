@@ -51,9 +51,7 @@
       horizon + left,
     ),
     inset: 0.5em,
-    table.header(
-      [*OS*], [*Version /\ release*], [*Support*], [*Last tested*], [*Comment*]
-    ),
+    table.header([*OS*], [*Version /\ release*], [*Support*], [*Last tested*], [*Comment*]),
     ..platforms
       .values()
       .map(p => {
