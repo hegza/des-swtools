@@ -24,6 +24,13 @@ jobs:
         with:
           submodules: "true"
 
+      - name: Download fonts for emojis
+        run: |
+          mkdir -p .fonts
+          curl --fail --location --silent --show-error \
+            --output .fonts/NotoColorEmoji.ttf \
+            https://github.com/googlefonts/noto-emoji/raw/v2.051/fonts/NotoColorEmoji.ttf
+
       - name: Compile manual
         uses: lvignoli/typst-action@main
         with:
