@@ -105,9 +105,10 @@
   ```term
   $ rustup target add riscv32imc-unknown-none-elf
   ```
-+ Install the flashing tools:
++ Install the flashing tools. The second command installs `cargo embed`, needed for legacy flashing flows on the course:
   ```term
   $ cargo install espflash espmonitor ldproxy
+  $ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
   ```
 + Allow `probe-rs` to program the flash memory of the device through the serial port by creating the appropriate udev rule at '/etc/udev/rules.d':
   ```term
