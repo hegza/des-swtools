@@ -6,6 +6,9 @@
 # Fetch min-manual
 git submodule update --init
 
+# Ensure fonts are installed
+apt install fonts-open-sans fonts-firacode
+
 # Render the document in PDF
 typst c manual.typ
 ```
