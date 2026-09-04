@@ -105,6 +105,8 @@
   ```term
   $ rustup target add riscv32imc-unknown-none-elf
   ```
+// Below-mentioned legacy workflow:
+// https://github.com/hegza/esp32c3-student-template
 + Install the flashing tools. The second command installs `cargo embed`, needed for legacy flashing flows on the course:
   ```term
   $ cargo install espflash espmonitor ldproxy
