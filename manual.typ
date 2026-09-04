@@ -103,7 +103,7 @@
 = Install target programming tools
 3. Install the appropriate cross-compiler for _ESP32-C3_. It supports a 32-bit RISC-V Instruction Set Architecture (ISA) with #box[the +I, +M, and +C extensions]:
   ```term
-  rustup target add riscv32imc-unknown-none-elf
+  $ rustup target add riscv32imc-unknown-none-elf
   ```
 + Install the flashing tools:
   ```term
