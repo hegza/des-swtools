@@ -106,6 +106,7 @@
 + Allow `probe-rs` to program the flash memory of the device through the serial port by creating the appropriate udev rule at '/etc/udev/rules.d':
   ```term
   $ echo -e "SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"303a\", ATTRS{idProduct}==\"1001\", MODE=\"0660\", GROUP=\"plugdev\"" | sudo tee /etc/udev/rules.d/99-esp-rust-board.rules > /dev/null
+  (there should be no output from the above command)
   $ sudo udevadm control --reload-rules && sudo udevadm trigger
   ```
 + Follow the instructions at~#url("https://probe.rs/docs/getting-started/probe-setup/#linux%3A-udev-rules")[Linux udev rules] to set the proper permissions for the FTDI serial ports.
